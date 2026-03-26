@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\csharp\\Assignment2\\Assignment2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68726B5A-BF67-40EE-B946-E5E1036F4444}|Assignment2\\Assignment2.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\csharp\\assignment2\\assignment2\\assignment2\\stringquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68726B5A-BF67-40EE-B946-E5E1036F4444}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\stringquestions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68726B5A-BF67-40EE-B946-E5E1036F4444}|Assignment2\\Assignment2.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\csharp\\assignment2\\assignment2\\assignment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68726B5A-BF67-40EE-B946-E5E1036F4444}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Assignment2||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68726B5A-BF67-40EE-B946-E5E1036F4444}|Assignment2\\Assignment2.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\csharp\\assignment2\\assignment2\\assignment2\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Assignment2",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\csharp\\Assignment2\\Assignment2\\Assignment2\\Assignment2.csproj",
+              "RelativeDocumentMoniker": "Assignment2\\Assignment2.csproj",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\csharp\\Assignment2\\Assignment2\\Assignment2\\Assignment2.csproj",
+              "RelativeToolTip": "Assignment2\\Assignment2.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-26T17:01:53.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stringquestions.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\csharp\\Assignment2\\Assignment2\\Assignment2\\Stringquestions.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Stringquestions.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\csharp\\Assignment2\\Assignment2\\Assignment2\\Stringquestions.cs",
+              "RelativeToolTip": "Assignment2\\Stringquestions.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvwoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T16:55:11.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\csharp\\Assignment2\\Assignment2\\Assignment2\\Program.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Program.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\csharp\\Assignment2\\Assignment2\\Assignment2\\Program.cs",
+              "RelativeToolTip": "Assignment2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T15:31:27.554Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
