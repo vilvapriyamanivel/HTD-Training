@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68726B5A-BF67-40EE-B946-E5E1036F4444}</ProjectGuid>
+    <ProjectGuid>{797EC063-015B-48D9-9112-DAC0DD473818}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Assignment2</RootNamespace>
     <AssemblyName>Assignment2</AssemblyName>
@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stringquestions.cs" />
+    <Compile Include="stringquestions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

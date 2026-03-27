@@ -10,8 +10,6 @@ namespace Assignment2
             arravgminmax();
             arrmarks();
             arrcopy();
-            Strassignment strassignment = new Strassignment();
-            strassignment.wordlength();
         }
         public static void arravgminmax()
         {
@@ -126,4 +124,3 @@ namespace Assignment2
 
     }
 }
-
