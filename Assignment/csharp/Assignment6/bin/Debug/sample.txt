@@ -1,0 +1,4 @@
+Hello, World!
+Welcome to C# file handling.
+This is a sample program.
+Reading and writing files is easy!
