@@ -12,7 +12,7 @@ class FileWriteReadExample
     {
         static void Main()
         {
-            // File path (created in the application's directory)
+            // File path 
             string filePath = "sample.txt";
 
             // Array of strings
