@@ -1,0 +1,6 @@
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\Qestion1 class lib\bin\Debug\Qestion1 class lib.dll
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\Qestion1 class lib\bin\Debug\Qestion1 class lib.pdb
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\Qestion1 class lib\obj\Debug\Qestion1 class lib.csproj.AssemblyReference.cache
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\Qestion1 class lib\obj\Debug\Qestion1 class lib.csproj.CoreCompileInputs.cache
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\Qestion1 class lib\obj\Debug\Qestion1 class lib.dll
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\Qestion1 class lib\obj\Debug\Qestion1 class lib.pdb

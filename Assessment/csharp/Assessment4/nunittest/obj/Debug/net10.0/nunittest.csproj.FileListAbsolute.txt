@@ -1,0 +1,6 @@
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\nunittest\obj\Debug\net10.0\nunittest.csproj.AssemblyReference.cache
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\nunittest\obj\Debug\net10.0\nunittest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\nunittest\obj\Debug\net10.0\nunittest.AssemblyInfoInputs.cache
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\nunittest\obj\Debug\net10.0\nunittest.AssemblyInfo.cs
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\nunittest\obj\Debug\net10.0\nunittest.csproj.CoreCompileInputs.cache
+C:\Users\vilvapriyam\DOTNET\Assessment\csharp\Assessment4\nunittest\obj\Debug\net10.0\nunittest.sourcelink.json

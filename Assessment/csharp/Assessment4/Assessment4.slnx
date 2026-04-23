@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Assessment4/Assessment4.csproj" Id="bd9dc8cd-3f03-4aa9-8e70-8418a1dceca0" />
+  <Project Path="Qestion1 class lib/Qestion1 class lib.csproj" Id="03a228ef-a760-40a7-aecf-2f4d3e376632" />
+  <Project Path="unittest/unittest.csproj" Id="6723de19-0199-4e39-9530-43c5e2ddbeac" />
+</Solution>
