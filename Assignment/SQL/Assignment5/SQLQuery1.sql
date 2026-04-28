@@ -85,7 +85,10 @@ insert into holiday values
 ('2026-10-31','diwali'),
 ('2026-12-25','christmas')
 
-insert into holiday values ('2026-04-27','normalday but consider a leave to test')
+
+insert into holiday values
+(cast(getdate() as date), 'justleave')
+
 
 
 create or alter trigger trg_emp_holidayrestrict
@@ -118,4 +121,3 @@ insert into emp(empno,ename,job,hiredate,sal,deptno)
 values(8009,'rajesh','clerk',getdate(),1200,20)
 
 delete from emp where empno = 7900
-select cast(getdate() as date)
