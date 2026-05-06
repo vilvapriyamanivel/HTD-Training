@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\ADO\\AdoAssignment1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B9FABBFD-5957-4A85-AA9B-6632C0C7208C}|AdoAssignment1\\AdoAssignment1.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\ado\\adoassignment1\\adoassignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9FABBFD-5957-4A85-AA9B-6632C0C7208C}|AdoAssignment1\\AdoAssignment1.csproj|solutionrelative:adoassignment1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\ADO\\AdoAssignment1\\AdoAssignment1\\Program.cs",
+              "RelativeDocumentMoniker": "AdoAssignment1\\Program.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\ADO\\AdoAssignment1\\AdoAssignment1\\Program.cs",
+              "RelativeToolTip": "AdoAssignment1\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA2wGEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T06:40:30.484Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
