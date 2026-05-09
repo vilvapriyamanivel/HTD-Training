@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\Web Technology\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2E954E-1241-4872-A326-D3B23392A302}|Assignment2\\Assignment2.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\web technology\\assignment2\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DE2E954E-1241-4872-A326-D3B23392A302}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2E954E-1241-4872-A326-D3B23392A302}|Assignment2\\Assignment2.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\web technology\\assignment2\\htmlpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DE2E954E-1241-4872-A326-D3B23392A302}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\htmlpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE2E954E-1241-4872-A326-D3B23392A302}|Assignment2\\Assignment2.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\web technology\\assignment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2E954E-1241-4872-A326-D3B23392A302}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HTMLPage.html",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\Web Technology\\Assignment2\\HTMLPage.html",
+              "RelativeDocumentMoniker": "Assignment2\\HTMLPage.html",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\Web Technology\\Assignment2\\HTMLPage.html",
+              "RelativeToolTip": "Assignment2\\HTMLPage.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-09T15:37:24.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JavaScript.js",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\Web Technology\\Assignment2\\JavaScript.js",
+              "RelativeDocumentMoniker": "Assignment2\\JavaScript.js",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\Web Technology\\Assignment2\\JavaScript.js",
+              "RelativeToolTip": "Assignment2\\JavaScript.js",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-09T15:36:27.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\Web Technology\\Assignment2\\Program.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Program.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\Web Technology\\Assignment2\\Program.cs",
+              "RelativeToolTip": "Assignment2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T15:33:43.619Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

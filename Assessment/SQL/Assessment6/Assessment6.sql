@@ -1,8 +1,8 @@
 --1.	Write a query to display your birthday( day of week)
-select datename(weekday, cast('2002-04-27' as date)) as birthday_day;
+select datename(weekday, cast('2004-03-27' as date)) as birthday_day;
 
 --2.	Write a query to display your age in days
-select datediff(day, cast('2002-04-27' as date), getdate()) as age_in_days;
+select datediff(day, cast('2004-03-27' as date), getdate()) as age_in_days;
 
 
 --3.	Write a query to display all employees information those who joined before 5 years in the current month
@@ -44,7 +44,7 @@ commit;
 --	b.     For Deptno 20 employees  20% of sal as bonus
 --	c      For Others employees 5%of sal as bonus
 go
-create function calculate_bonus
+create or alter function calculate_bonus
 (
  @deptno int,
  @sal int
@@ -71,8 +71,9 @@ from emp;
 go
 
 
---6. Create a procedure to update the salary of employee by 500 whose dept name is Sales and current salary is below 1500 (use emp table)
-create procedure update_sales_salary
+--6. Create a procedure to update the salary of employee by 500 whose dept name is Sales and current salary is below 1500 (using emp table)
+--option1
+create  procedure update_sales_salary
 as
 begin
  update emp
@@ -80,7 +81,16 @@ begin
  where deptno = 30
  and sal < 1500;
 end;
-
+--option2
+go
+create or alter procedure update_sales_salary
+as
+begin
+ update emp
+ set sal = sal + 500
+ where job = 'salesman'
+ and sal < 1500;
+end;
 --to execute
 exec update_sales_salary;
 go
@@ -88,4 +98,3 @@ go
 
 
 
-select * from emp;
