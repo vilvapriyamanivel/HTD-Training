@@ -40,24 +40,6 @@ select * from employee_details;
 
 --Question2
 -- Write a procedure that takes empid as input and outputs the updated salary as current salary + 100 for the given employee.
- 
-go
-create or alter procedure updatesalary
-    @empid int,
-    @updatedsal numeric(10,2) output
-as
-begin
-    update employee_details
-    set empsal = empsal + 100
-    where empno = @empid;
-
-    select @updatedsal = empsal
-    from employee_details
-    where empno = @empid;
-end;
-go
-
---
 go
 create or alter procedure updatsalary
     @empid int
@@ -75,10 +57,6 @@ go
 
 
 --to test
-declare @sal numeric(10,2);
-exec updatesalary 1, @sal output;
-select @sal as updated_salary;
---
 exec updatsalary 1;
 
 --display after updation
