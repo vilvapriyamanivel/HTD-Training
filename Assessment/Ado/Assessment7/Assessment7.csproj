@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ADO_Assessment7.Question1</StartupObject>
+    <StartupObject>ADO_Assessment7.Question2</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
