@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Get Single Element</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <ul>
+        <li>CSHARP</li>
+        <li>SQL</li>
+        <li>ADO</li>
+
+    </ul>
+    <p>
+        open console to see the text of the selected list item.
+    </p>
+
+    <script>
+        $(document).ready(function () {
+            let lastItem = $("li").last();
+            console.log(lastItem.text());
+        });
+    </script>
+
+
+</body>
+</html>

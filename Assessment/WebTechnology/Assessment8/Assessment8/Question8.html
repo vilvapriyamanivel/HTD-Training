@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>Input Change</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <input type="text" id="myInput" placeholder="Type something">
+
+    <p id="output">You entered: </p>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").change(function () {
+                let value = $(this).val();
+
+                $("#output").append(value + " "); 
+            });
+        });
+    </script>
+
+
+</body>
+</html>
