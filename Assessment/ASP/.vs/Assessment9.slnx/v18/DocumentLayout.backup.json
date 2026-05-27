@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\addeditmenu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\addeditmenu.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\addeditmenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\addeditmenu.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\menulist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\menulist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\menulist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\menulist.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\orderstats.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\orderstats.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\orderstats.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\orderstats.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\logout.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\menudetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\menudetails.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\logout.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\menudetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\menudetails.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\asp\\assessment9\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE695B83-50E1-44F6-9F07-69F59235B22F}|Assessment9\\Assessment9.csproj|solutionrelative:assessment9\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Logout.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Logout.aspx.cs",
+              "RelativeDocumentMoniker": "Assessment9\\Logout.aspx.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Logout.aspx.cs",
+              "RelativeToolTip": "Assessment9\\Logout.aspx.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:15:26.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Web.config",
+              "RelativeDocumentMoniker": "Assessment9\\Web.config",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Web.config",
+              "RelativeToolTip": "Assessment9\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-27T04:58:27.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEditMenu.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\AddEditMenu.aspx.cs",
+              "RelativeDocumentMoniker": "Assessment9\\AddEditMenu.aspx.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\AddEditMenu.aspx.cs",
+              "RelativeToolTip": "Assessment9\\AddEditMenu.aspx.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:10:27.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Login.aspx",
+              "RelativeDocumentMoniker": "Assessment9\\Login.aspx",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Login.aspx",
+              "RelativeToolTip": "Assessment9\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T04:33:16.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuList.aspx",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuList.aspx",
+              "RelativeDocumentMoniker": "Assessment9\\MenuList.aspx",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuList.aspx",
+              "RelativeToolTip": "Assessment9\\MenuList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T04:46:42.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddEditMenu.aspx",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\AddEditMenu.aspx",
+              "RelativeDocumentMoniker": "Assessment9\\AddEditMenu.aspx",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\AddEditMenu.aspx",
+              "RelativeToolTip": "Assessment9\\AddEditMenu.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:03:45.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderStats.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\OrderStats.aspx.cs",
+              "RelativeDocumentMoniker": "Assessment9\\OrderStats.aspx.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\OrderStats.aspx.cs",
+              "RelativeToolTip": "Assessment9\\OrderStats.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:22:22.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderStats.aspx",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\OrderStats.aspx",
+              "RelativeDocumentMoniker": "Assessment9\\OrderStats.aspx",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\OrderStats.aspx",
+              "RelativeToolTip": "Assessment9\\OrderStats.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:20:21.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuList.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuList.aspx.cs",
+              "RelativeDocumentMoniker": "Assessment9\\MenuList.aspx.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuList.aspx.cs",
+              "RelativeToolTip": "Assessment9\\MenuList.aspx.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:00:53.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Assessment9\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Global.asax.cs",
+              "RelativeToolTip": "Assessment9\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:16:59.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuDetails.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuDetails.aspx.cs",
+              "RelativeDocumentMoniker": "Assessment9\\MenuDetails.aspx.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuDetails.aspx.cs",
+              "RelativeToolTip": "Assessment9\\MenuDetails.aspx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T05:13:38.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Logout.aspx",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Logout.aspx",
+              "RelativeDocumentMoniker": "Assessment9\\Logout.aspx",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Logout.aspx",
+              "RelativeToolTip": "Assessment9\\Logout.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:15:22.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MenuDetails.aspx",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuDetails.aspx",
+              "RelativeDocumentMoniker": "Assessment9\\MenuDetails.aspx",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\MenuDetails.aspx",
+              "RelativeToolTip": "Assessment9\\MenuDetails.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T05:13:31.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Site.Master",
+              "RelativeDocumentMoniker": "Assessment9\\Site.Master",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Site.Master",
+              "RelativeToolTip": "Assessment9\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-05-27T04:42:08.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Assessment9\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\ASP\\Assessment9\\Login.aspx.cs",
+              "RelativeToolTip": "Assessment9\\Login.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T04:39:53.465Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
