@@ -1,0 +1,7 @@
+C:\Users\vilvapriyam\DOTNET\miniproject\miniproject\obj\Debug\miniproject.csproj.AssemblyReference.cache
+C:\Users\vilvapriyam\DOTNET\miniproject\miniproject\obj\Debug\miniproject.csproj.CoreCompileInputs.cache
+C:\Users\vilvapriyam\DOTNET\miniproject\miniproject\bin\Debug\miniproject.exe.config
+C:\Users\vilvapriyam\DOTNET\miniproject\miniproject\bin\Debug\miniproject.exe
+C:\Users\vilvapriyam\DOTNET\miniproject\miniproject\bin\Debug\miniproject.pdb
+C:\Users\vilvapriyam\DOTNET\miniproject\miniproject\obj\Debug\miniproject.exe
+C:\Users\vilvapriyam\DOTNET\miniproject\miniproject\obj\Debug\miniproject.pdb
