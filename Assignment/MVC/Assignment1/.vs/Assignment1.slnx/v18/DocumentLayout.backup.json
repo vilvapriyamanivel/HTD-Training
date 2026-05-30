@@ -54,21 +54,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "202605271620147_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
-              "RelativeToolTip": "Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T16:20:19.161Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -80,6 +67,32 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T16:19:44.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Assignment1\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Assignment1\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T16:05:05.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "202605271620147_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
+              "RelativeToolTip": "Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T16:20:19.161Z",
               "EditorCaption": ""
             },
             {
@@ -106,19 +119,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2026-05-27T15:50:28.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "Assignment1\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "Assignment1\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T16:05:05.665Z",
               "EditorCaption": ""
             },
             {

@@ -1,3 +1,6 @@
+
+
+
 --drop database TrainReservationDB
 
 --GO
@@ -330,9 +333,87 @@ VALUES
 (11, 'Chennai',   '18:35', '18:35', 6);
 
 
-----
+ALTER TABLE Passengers
+DROP COLUMN Occupation;
+ALTER TABLE Bookings
+ADD BoardingStation VARCHAR(100),
+    DroppingStation VARCHAR(100);
+---------------
+INSERT INTO Trains
+(
+    TrainNo, TrainName, FromStation, ToStation,
+    DepartureTime, ArrivalTime, JourneyDuration,
+    Total2ACSeats, Available2ACSeats, Charge2AC,
+    Total3ACSeats, Available3ACSeats, Charge3AC,
+    TotalSleeperSeats, AvailableSleeperSeats, ChargeSleeper,
+    IsDeleted
+)
+VALUES
+(
+    99999, 'Test Waiting List Express', 'Hyderabad', 'Bangalore',
+    '20:00', '06:00', '10 Hours',
+    
+    10, 2, 1500.00,   -- Only 2 seats available
+    10, 2, 1000.00,   -- Only 2 seats available
+    20, 2, 500.00,    -- Only 2 seats available
+    
+    0
+);
+INSERT INTO TrainStops (TrainNo, StationName, ArrivalTime, DepartureTime, StopOrder)
+VALUES
+(99999, 'Hyderabad', '19:30', '20:00', 1),
+(99999, 'Kurnool',   '23:00', '23:05', 2),
+(99999, 'Anantapur', '02:00', '02:05', 3),
+(99999, 'Bangalore', '06:00', '06:00', 4);
+ALTER TABLE Passengers
+ADD BookingStatus VARCHAR(20) DEFAULT 'Confirmed';
+
+ALTER TABLE Passengers
+ADD Status VARCHAR(20) DEFAULT 'Active';
+ALTER TABLE Bookings
+ADD BoardingPoint VARCHAR(100),
+    DroppingPoint VARCHAR(100);
+--ALTER TABLE Passengers
+--DROP COLUMN Status;
+
+select * from Passengers
 
 
 
+INSERT INTO Trains
+(
+    TrainNo, TrainName, FromStation, ToStation,
+    DepartureTime, ArrivalTime, JourneyDuration,
 
+    Total2ACSeats, Available2ACSeats, Charge2AC,
+    Total3ACSeats, Available3ACSeats, Charge3AC,
+    TotalSleeperSeats, AvailableSleeperSeats, ChargeSleeper,
 
+    IsDeleted
+)
+VALUES
+(
+    88888, 'Single Seat Express', 'Hyderabad', 'Mumbai',
+    '22:00', '10:00', '12 Hours',
+
+    5, 1, 2000.00,   -- Only 1 seat available
+    5, 1, 1500.00,   -- Only 1 seat available
+    10, 1, 800.00,   -- Only 1 seat available
+
+    0
+);
+
+INSERT INTO TrainStops (TrainNo, StationName, ArrivalTime, DepartureTime, StopOrder)
+VALUES
+(88888, 'Hyderabad', '21:30', '22:00', 1),
+(88888, 'Sholapur',  '04:00', '04:05', 2),
+(88888, 'Pune',      '07:00', '07:05', 3),
+(88888, 'Mumbai',    '10:00', '10:00', 4);
+
+----------------@@@@@@@@@@@@@@@@2
+ALTER TABLE Passengers
+ADD PassengerStatus VARCHAR(20) DEFAULT 'Active';
+ALTER TABLE Passengers
+ADD PassengerStatus VARCHAR(20) DEFAULT 'Active';
+ALTER TABLE Trains
+ADD TotalSeats INT;

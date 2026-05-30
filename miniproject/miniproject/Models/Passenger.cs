@@ -21,5 +21,8 @@ namespace miniproject.Models
             public string PhoneNumber { get; set; }
 
             public string SeatNumber { get; set; }
-        }
+        public string IdProofType { get; set; }
+
+        public string IdProofNumber { get; set; }
+    }
     }

@@ -443,8 +443,40 @@ namespace miniproject.Services
 
             con.Close();
         }
+        //stops
+        public static List<string> GetStops(int trainNo)
+        {
+            List<string> stops = new List<string>();
+
+            SqlConnection con =
+            new SqlConnection(DbConfig.ConnectionString);
+
+            string query =
+            @"SELECT StationName
+      FROM TrainStops
+      WHERE TrainNo=@TrainNo
+      ORDER BY StopOrder";
+
+            SqlCommand cmd =
+            new SqlCommand(query, con);
+
+            cmd.Parameters.AddWithValue("@TrainNo", trainNo);
+
+            con.Open();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                stops.Add(dr["StationName"].ToString());
+            }
+
+            con.Close();
+
+            return stops;
+        }
         //delete train
-       public  static void DeleteTrain()
+        public  static void DeleteTrain()
         {
             try
             {

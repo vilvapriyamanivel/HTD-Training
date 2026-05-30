@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace miniproject.Services
 {
-    public  class UserService
+    public class UserService
     {
         public static int loggedInUserId = 0;
         //user panel
@@ -203,7 +203,7 @@ namespace miniproject.Services
                         break;
 
                     case 3:
-                        BookingService.CancelTicket();
+                        BookingService.CancelPassenger();
                         break;
 
                     case 4:

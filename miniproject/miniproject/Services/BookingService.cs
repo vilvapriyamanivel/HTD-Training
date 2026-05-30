@@ -17,151 +17,169 @@ namespace miniproject.Services
         {
             try
             {
-                TrainService.ViewTrains(); 
+                TrainService.ViewTrains();
 
                 Console.Write("Enter Train No : ");
-
-                int trainNo =
-                Convert.ToInt32(Console.ReadLine());
+                int trainNo = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Enter Travel Date : ");
-
-                DateTime travelDate =
-                Convert.ToDateTime(Console.ReadLine());
+                DateTime travelDate = Convert.ToDateTime(Console.ReadLine());
 
                 Console.WriteLine("\n1. 2AC");
                 Console.WriteLine("2. 3AC");
                 Console.WriteLine("3. Sleeper");
 
                 Console.Write("Choose Class : ");
-
-                int classChoice =
-                Convert.ToInt32(Console.ReadLine());
+                int classChoice = Convert.ToInt32(Console.ReadLine());
 
                 string travelClass = "";
                 string seatColumn = "";
                 string chargeColumn = "";
+                string prefix = "";
 
                 if (classChoice == 1)
                 {
                     travelClass = "2AC";
                     seatColumn = "Available2ACSeats";
                     chargeColumn = "Charge2AC";
+                    prefix = "A";
                 }
                 else if (classChoice == 2)
                 {
                     travelClass = "3AC";
                     seatColumn = "Available3ACSeats";
                     chargeColumn = "Charge3AC";
+                    prefix = "B";
                 }
                 else
                 {
                     travelClass = "Sleeper";
                     seatColumn = "AvailableSleeperSeats";
                     chargeColumn = "ChargeSleeper";
+                    prefix = "S";
+                }
+                SqlConnection con = new SqlConnection(DbConfig.ConnectionString);
+                con.Open();
+                ShowStops(trainNo);
+
+                Console.Write("Enter Boarding Stop Order : ");
+                int boardingOrder = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Enter Dropping Stop Order : ");
+                int droppingOrder = Convert.ToInt32(Console.ReadLine());
+
+                // validation
+                if (boardingOrder >= droppingOrder)
+                {
+                    Console.WriteLine("Invalid selection");
+                    return;
                 }
 
+               
+
+                SqlCommand stopCmd = new SqlCommand(@"
+SELECT StationName
+FROM TrainStops
+WHERE TrainNo=@TrainNo AND StopOrder=@Order", con);
+
+                // Boarding point
+                stopCmd.Parameters.AddWithValue("@TrainNo", trainNo);
+                stopCmd.Parameters.AddWithValue("@Order", boardingOrder);
+
+                string boardingPoint = stopCmd.ExecuteScalar().ToString();
+
+                // Dropping point
+                stopCmd.Parameters.Clear();
+                stopCmd.Parameters.AddWithValue("@TrainNo", trainNo);
+                stopCmd.Parameters.AddWithValue("@Order", droppingOrder);
+
+                string droppingPoint = stopCmd.ExecuteScalar().ToString();
+
+
                 Console.Write("Passenger Count(Max 3) : ");
+                int passengerCount = Convert.ToInt32(Console.ReadLine());
 
-                int passengerCount =
-                Convert.ToInt32(Console.ReadLine());
+                // SqlConnection con = new SqlConnection(DbConfig.ConnectionString);
+                //con.Open();
 
-                SqlConnection con =
-                new SqlConnection(DbConfig.ConnectionString);
-                con.Open();
                 if (passengerCount > 3)
                 {
                     Console.WriteLine("Maximum 3 Tickets Allowed");
-                    con.Close();
                     return;
                 }
 
-
-                string query =
-                $"SELECT {seatColumn},{chargeColumn} FROM Trains WHERE TrainNo=@TrainNo";
-
-                SqlCommand cmd =
-                new SqlCommand(query, con);
-
+                // GET TRAIN DETAILS
+                string query = $"SELECT {seatColumn},{chargeColumn} FROM Trains WHERE TrainNo=@TrainNo";
+                SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@TrainNo", trainNo);
 
-                SqlDataReader dr =
-                cmd.ExecuteReader();
+                SqlDataReader dr = cmd.ExecuteReader();
 
-                dr.Read();
                 if (!dr.Read())
                 {
                     Console.WriteLine("Invalid Train Number");
-                    dr.Close();
-                    con.Close();
                     return;
                 }
-                int availableSeats =
-                Convert.ToInt32(dr[seatColumn]);
 
-                decimal charge =
-                Convert.ToDecimal(dr[chargeColumn]);
+                int availableSeats = Convert.ToInt32(dr[seatColumn]);
+                decimal charge = Convert.ToDecimal(dr[chargeColumn]);
 
                 dr.Close();
+                int confirmedCount = Math.Min(availableSeats, passengerCount);
+                int waitingCount = passengerCount - confirmedCount;
+                string bookingType =
+confirmedCount > 0 && waitingCount > 0 ? "Partially Confirmed" :
+confirmedCount > 0 ? "Confirmed" : "Waiting";
+                //string bookingType = availableSeats >= passengerCount ? "Confirmed" : "Waiting";
 
-                string bookingType = "Confirmed";
+                decimal amount = passengerCount * charge;
 
-                if (availableSeats < passengerCount)
-                {
-                    bookingType = "Waiting";
-
-                    Console.WriteLine(
-                    "\nSeats Not Available");
-
-                    Console.WriteLine(
-                    "Booking Added To Waiting List");
-                }
-
-                decimal amount =
-                passengerCount * charge;
-
-                string bookingQuery =
-                @"INSERT INTO Bookings
-    (
-        TravelDate,
-        UserId,
-        TrainNo,
-        TravelClass,
-        PassengerCount,
-        Amount,
-        BookingType
-    )
-    VALUES
-    (
-        @TravelDate,
-        @UserId,
-        @TrainNo,
-        @TravelClass,
-        @PassengerCount,
-        @Amount,
-        @BookingType
-    )";
-
-                SqlCommand bookingCmd =
-                new SqlCommand(bookingQuery, con);
+                // INSERT BOOKING
+                SqlCommand bookingCmd = new SqlCommand(@"
+            INSERT INTO Bookings
+            (TravelDate, UserId, TrainNo, TravelClass, PassengerCount, Amount, BookingType, BoardingPoint, DroppingPoint)
+            VALUES
+            (@TravelDate, @UserId, @TrainNo, @TravelClass, @PassengerCount, @Amount, @BookingType, @BoardingPoint, @DroppingPoint)", con);
 
                 bookingCmd.Parameters.AddWithValue("@TravelDate", travelDate);
                 bookingCmd.Parameters.AddWithValue("@UserId", UserService.loggedInUserId);
                 bookingCmd.Parameters.AddWithValue("@TrainNo", trainNo);
                 bookingCmd.Parameters.AddWithValue("@TravelClass", travelClass);
+                bookingCmd.Parameters.AddWithValue("@BoardingPoint", boardingPoint);
+                bookingCmd.Parameters.AddWithValue("@DroppingPoint", droppingPoint);
                 bookingCmd.Parameters.AddWithValue("@PassengerCount", passengerCount);
                 bookingCmd.Parameters.AddWithValue("@Amount", amount);
                 bookingCmd.Parameters.AddWithValue("@BookingType", bookingType);
 
                 bookingCmd.ExecuteNonQuery();
 
-                SqlCommand idCmd =
-                new SqlCommand(
-                "SELECT MAX(BookingId) FROM Bookings", con);
+                int bookingId = Convert.ToInt32(new SqlCommand("SELECT MAX(BookingId) FROM Bookings", con).ExecuteScalar());
 
-                int bookingId =
-                Convert.ToInt32(idCmd.ExecuteScalar());
+                // GET LAST SEAT NUMBER FROM DB
+                SqlCommand seatCmd = new SqlCommand(@"
+            SELECT TOP 1 SeatNumber
+            FROM Passengers P
+            JOIN Bookings B ON P.BookingId = B.BookingId
+            WHERE B.TrainNo=@TrainNo AND B.TravelClass=@Class
+            ORDER BY P.PassengerId DESC", con);
 
+                seatCmd.Parameters.AddWithValue("@TrainNo", trainNo);
+                seatCmd.Parameters.AddWithValue("@Class", travelClass);
+
+                object result = seatCmd.ExecuteScalar();
+
+                int seatCounter = 1;
+
+                if (result != null)
+                {
+                    string lastSeat = result.ToString();
+                    string numberPart = new string(lastSeat.Where(char.IsDigit).ToArray());
+
+                    if (!string.IsNullOrEmpty(numberPart))
+                        seatCounter = Convert.ToInt32(numberPart) + 1;
+                }
+
+                // PASSENGERS LOOP
                 for (int i = 1; i <= passengerCount; i++)
                 {
                     Console.WriteLine("\nPassenger " + i);
@@ -170,109 +188,110 @@ namespace miniproject.Services
                     string name = Console.ReadLine();
 
                     Console.Write("Age : ");
-                    int age =
-                    Convert.ToInt32(Console.ReadLine());
+                    int age = Convert.ToInt32(Console.ReadLine());
 
-                    Console.Write("Gender : ");
-                    string gender =
-                    Console.ReadLine();
+                    Console.WriteLine("Select Gender (1.Male 2.Female 3.Other): ");
+                    int g = Convert.ToInt32(Console.ReadLine());
+                    string gender = g == 1 ? "Male" : g == 2 ? "Female" : "Other";
 
-                    Console.Write("Phone Number : ");
-                    string phone =
-                    Console.ReadLine();
+                    Console.WriteLine("Select ID Proof (1.Aadhar 2.PAN 3.Passport 4.VoterID): ");
+                    int id = Convert.ToInt32(Console.ReadLine());
+
+                    string idProofType = id == 1 ? "Aadhar" :
+                                         id == 2 ? "PAN" :
+                                         id == 3 ? "Passport" : "VoterID";
+
+                    Console.Write("ID Number : ");
+                    string idProofNumber = Console.ReadLine();
+
+                    Console.Write("Phone : ");
+                    string phone = Console.ReadLine();
 
                     string seatNo = "Waiting";
 
-                    if (bookingType == "Confirmed")
+                    //if (bookingType == "Confirmed")
+                    //{
+                    //    seatNo = prefix + seatCounter;
+                    //    seatCounter++;
+                    //}
+                    if (i <= confirmedCount)
                     {
-                        if (travelClass == "2AC")
-                        {
-                            seatNo =
-                            "A" + new Random().Next(1, 50);
-                        }
-                        else if (travelClass == "3AC")
-                        {
-                            seatNo =
-                            "B" + new Random().Next(1, 100);
-                        }
-                        else
-                        {
-                            seatNo =
-                            "S" + new Random().Next(1, 150);
-                        }
+                        seatNo = prefix + seatCounter;
+                        seatCounter++;
+                    }
+                    else
+                    {
+                        seatNo = "Waiting";
                     }
 
-                    Console.WriteLine(
-                    "Seat Number : " + seatNo);
+                    Console.WriteLine("Seat Number : " + seatNo);
 
-                    string passQuery =
-                    @"INSERT INTO Passengers
-        (
-            BookingId,
-            PassengerName,
-            Age,
-            Gender,
-            PhoneNumber,
-            SeatNumber
-        )
-        VALUES
-        (
-            @BookingId,
-            @PassengerName,
-            @Age,
-            @Gender,
-            @PhoneNumber,
-            @SeatNumber
-        )";
-
-                    SqlCommand passCmd =
-                    new SqlCommand(passQuery, con);
+                    SqlCommand passCmd = new SqlCommand(@"
+                INSERT INTO Passengers
+                (BookingId, PassengerName, Age, Gender, IdProofType, IdProofNumber, PhoneNumber, SeatNumber,Status)
+                VALUES
+                (@BookingId, @PassengerName, @Age, @Gender, @IdProofType, @IdProofNumber, @PhoneNumber, @SeatNumber,'Active')", con);
 
                     passCmd.Parameters.AddWithValue("@BookingId", bookingId);
                     passCmd.Parameters.AddWithValue("@PassengerName", name);
                     passCmd.Parameters.AddWithValue("@Age", age);
                     passCmd.Parameters.AddWithValue("@Gender", gender);
+                    passCmd.Parameters.AddWithValue("@IdProofType", idProofType);
+                    passCmd.Parameters.AddWithValue("@IdProofNumber", idProofNumber);
                     passCmd.Parameters.AddWithValue("@PhoneNumber", phone);
                     passCmd.Parameters.AddWithValue("@SeatNumber", seatNo);
 
                     passCmd.ExecuteNonQuery();
                 }
 
-                if (bookingType == "Confirmed")
+                if (confirmedCount > 0)
                 {
-                    string updateSeats =
-                    $"UPDATE Trains SET {seatColumn}={seatColumn}-@Count WHERE TrainNo=@TrainNo";
+                    SqlCommand updateCmd = new SqlCommand(
+                        $"UPDATE Trains SET {seatColumn}={seatColumn}-@ConfirmedCount WHERE TrainNo=@TrainNo", con);
 
-                    SqlCommand updateCmd =
-                    new SqlCommand(updateSeats, con);
-
-                    updateCmd.Parameters.AddWithValue("@Count", passengerCount);
+                    updateCmd.Parameters.AddWithValue("@ConfirmedCount", confirmedCount);
                     updateCmd.Parameters.AddWithValue("@TrainNo", trainNo);
 
                     updateCmd.ExecuteNonQuery();
                 }
-
-                con.Close();
-
                 Console.WriteLine("\nBooking Successful");
                 Console.WriteLine("Booking ID : " + bookingId);
                 Console.WriteLine("Booking Type : " + bookingType);
                 Console.WriteLine("Total Amount : " + amount);
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Invalid Input Format");
-            }
-            catch (SqlException ex)
-            {
-                Console.WriteLine("Database Error : " + ex.Message);
+                Console.WriteLine("Boarding Point : " + boardingPoint);
+                Console.WriteLine("Dropping Point : " + droppingPoint);
+                Console.WriteLine("\n===== TICKET DETAILS =====");
+
+                SqlCommand viewCmd = new SqlCommand(
+                @"SELECT PassengerName, Age, Gender, SeatNumber, IdProofType
+  FROM Passengers
+  WHERE BookingId=@BookingId", con);
+
+                viewCmd.Parameters.AddWithValue("@BookingId", bookingId);
+
+                SqlDataReader pr = viewCmd.ExecuteReader();
+
+                while (pr.Read())
+                {
+                    Console.WriteLine("----------------------");
+                    Console.WriteLine("Name : " + pr["PassengerName"]);
+                    Console.WriteLine("Age : " + pr["Age"]);
+                    Console.WriteLine("Gender : " + pr["Gender"]);
+                    Console.WriteLine("Seat No : " + pr["SeatNumber"]);
+                    Console.WriteLine("ID Type : " + pr["IdProofType"]);
+                    //Console.WriteLine("Passenger ID : " + pr["PassengerId"]);
+                    //Console.WriteLine("Name : " + pr["PassengerName"]);
+                    //Console.WriteLine("Seat No : " + pr["SeatNumber"]);
+                    //Console.WriteLine("Status : " + pr["PassengerStatus"]);
+                }
+
+                pr.Close();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error : " + ex.Message);
             }
         }
-
         // VIEW BOOKINGS
 
         public static void ViewBookings()
@@ -303,38 +322,66 @@ namespace miniproject.Services
 
                 Console.WriteLine("================================");
 
-                Console.WriteLine(
-                "Booking ID : " +
-                dr["BookingId"]);
+                int bookingId = Convert.ToInt32(dr["BookingId"]);
 
-                Console.WriteLine(
-                "Train No : " +
-                dr["TrainNo"]);
+                Console.WriteLine("Booking ID : " + bookingId);
+                Console.WriteLine("Train No : " + dr["TrainNo"]);
+                Console.WriteLine("Travel Class : " + dr["TravelClass"]);
+                Console.WriteLine("Boarding Point : " + dr["BoardingPoint"]);
+                Console.WriteLine("Dropping Point : " + dr["DroppingPoint"]);
+                Console.WriteLine("Travel Date : " +
+                Convert.ToDateTime(dr["TravelDate"]).ToShortDateString());
+                Console.WriteLine("Passengers : " + dr["PassengerCount"]);
+                Console.WriteLine("Amount : " + dr["Amount"]);
+                Console.WriteLine("Booking Status : " + dr["BookingStatus"]);
+                Console.WriteLine("Booking Type : " + dr["BookingType"]);
 
-                Console.WriteLine(
-                "Travel Class : " +
-                dr["TravelClass"]);
+                Console.WriteLine("\n--- PASSENGERS ---");
 
-                Console.WriteLine(
-                "Travel Date : " +
-                Convert.ToDateTime(
-                dr["TravelDate"]).ToShortDateString());
+                // CLOSE FIRST READER BEFORE NEW QUERY
+                SqlConnection con2 = new SqlConnection(DbConfig.ConnectionString);
+                con2.Open();
 
-                Console.WriteLine(
-                "Passengers : " +
-                dr["PassengerCount"]);
+                SqlCommand passCmd = new SqlCommand(
+@"SELECT PassengerId, PassengerName, Age, Gender, SeatNumber, Status, IdProofType, IdProofNumber
+  FROM Passengers
+  WHERE BookingId=@BookingId", con2);
 
-                Console.WriteLine(
-                "Amount : " +
-                dr["Amount"]);
+                passCmd.Parameters.AddWithValue("@BookingId", bookingId);
 
-                Console.WriteLine(
-                "Booking Status : " +
-                dr["BookingStatus"]);
+                SqlDataReader pr = passCmd.ExecuteReader();
 
-                Console.WriteLine(
-                "Booking Type : " +
-                dr["BookingType"]);
+                while (pr.Read())
+                {
+                    Console.WriteLine("Passenger ID : " + pr["PassengerId"]);
+                    Console.WriteLine("Name : " + pr["PassengerName"]);
+                    Console.WriteLine("Age : " + pr["Age"]);
+                    Console.WriteLine("Gender : " + pr["Gender"]);
+                    Console.WriteLine("Seat No : " + pr["SeatNumber"]);
+                    //Console.WriteLine("Status : " + pr["Status"]);
+                    string seatNo = pr["SeatNumber"].ToString();
+
+                    Console.WriteLine("Seat No : " + seatNo);
+
+                    if (pr["Status"].ToString() == "Cancelled")
+                    {
+                        Console.WriteLine("Status : Cancelled");
+                    }
+                    else if (seatNo == "Waiting")
+                    {
+                        Console.WriteLine("Status : Waiting");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Status : Confirmed");
+                    }
+                    Console.WriteLine("ID Type : " + pr["IdProofType"]);
+                    Console.WriteLine("ID Number : " + pr["IdProofNumber"]);
+                    Console.WriteLine("----------------------");
+                }
+
+                pr.Close();
+                con2.Close();
 
                 Console.WriteLine("================================");
             }
@@ -345,6 +392,7 @@ namespace miniproject.Services
             }
 
             con.Close();
+
         }
 
         // VIEW ALL BOOKINGS
@@ -531,6 +579,22 @@ AND BookingStatus='Active'";
                 seatCmd.Parameters.AddWithValue("@TrainNo", trainNo);
 
                 seatCmd.ExecuteNonQuery();
+                string prefix = "";
+
+                if (travelClass == "2AC")
+                    prefix = "A";
+                else if (travelClass == "3AC")
+                    prefix = "B";
+                else
+                    prefix = "S";
+
+                for (int i = 0; i < passengerCount; i++)
+                {
+                    PromoteWaitingPassenger(
+                        trainNo,
+                        travelClass,
+                        prefix);
+                }
 
                 con.Close();
 
@@ -549,6 +613,230 @@ AND BookingStatus='Active'";
             {
                 Console.WriteLine("Error : " + ex.Message);
             }
+        }
+        public static void CancelPassenger()
+        {
+            SqlConnection con = new SqlConnection(DbConfig.ConnectionString);
+            con.Open();
+
+            Console.Write("Enter Booking ID : ");
+            int bookingId = Convert.ToInt32(Console.ReadLine());
+
+            SqlCommand cmd = new SqlCommand(@"
+        SELECT PassengerId, PassengerName, SeatNumber
+        FROM Passengers
+        WHERE BookingId=@BookingId AND Status='Active'", con);
+
+            cmd.Parameters.AddWithValue("@BookingId", bookingId);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            Console.WriteLine("\n--- PASSENGERS ---");
+            Console.WriteLine("Passenger ID - Name - Seat No");
+            while (dr.Read())
+            {
+                Console.WriteLine(
+                    dr["PassengerId"] + " - " +
+                    dr["PassengerName"] + " - " +
+                    dr["SeatNumber"]);
+            }
+
+            dr.Close();
+
+            Console.Write("\nEnter Passenger ID to cancel : ");
+            int passengerId = Convert.ToInt32(Console.ReadLine());
+
+            // get seat
+            SqlCommand getSeat = new SqlCommand(@"
+        SELECT SeatNumber FROM Passengers WHERE PassengerId=@Id", con);
+
+            getSeat.Parameters.AddWithValue("@Id", passengerId);
+
+            string seat = getSeat.ExecuteScalar().ToString();
+
+            bool wasWaiting = seat == "Waiting";
+
+            // update passenger
+            SqlCommand update = new SqlCommand(@"
+        UPDATE Passengers
+        SET Status='Cancelled'
+        WHERE PassengerId=@Id", con);
+
+            update.Parameters.AddWithValue("@Id", passengerId);
+            update.ExecuteNonQuery();
+
+            Console.WriteLine("\nPassenger Cancellation Successful");
+            //Console.WriteLine("Seat Released : " + seat);
+
+            // get booking + class + train for that passenger
+            SqlCommand infoCmd = new SqlCommand(@"
+SELECT B.TrainNo, B.TravelClass
+FROM Passengers P
+JOIN Bookings B ON P.BookingId = B.BookingId
+WHERE P.PassengerId=@Id", con);
+
+            infoCmd.Parameters.AddWithValue("@Id", passengerId);
+
+            SqlDataReader infoDr = infoCmd.ExecuteReader();
+
+            int trainNo = 0;
+            string travelClass = "";
+
+            if (infoDr.Read())
+            {
+                trainNo = Convert.ToInt32(infoDr["TrainNo"]);
+                travelClass = infoDr["TravelClass"].ToString();
+            }
+
+            infoDr.Close();
+
+            // decide column
+            string seatColumn = "";
+
+            if (travelClass == "2AC")
+                seatColumn = "Available2ACSeats";
+            else if (travelClass == "3AC")
+                seatColumn = "Available3ACSeats";
+            else
+                seatColumn = "AvailableSleeperSeats";
+
+            // update seat count
+            if (!wasWaiting)
+            {
+                SqlCommand seatUpdate = new SqlCommand(
+                $"UPDATE Trains SET {seatColumn} = {seatColumn} + 1 WHERE TrainNo=@TrainNo", con);
+
+                seatUpdate.Parameters.AddWithValue("@TrainNo", trainNo);
+                seatUpdate.ExecuteNonQuery();
+            }
+            string prefix = "";
+
+            if (travelClass == "2AC")
+                prefix = "A";
+            else if (travelClass == "3AC")
+                prefix = "B";
+            else
+                prefix = "S";
+
+            if (!wasWaiting)
+            {
+                PromoteWaitingPassenger(
+                    trainNo,
+                    travelClass,
+                    prefix);
+            }
+
+            con.Close();
+        }
+        public static void ShowStops(int trainNo)
+        {
+            SqlConnection con = new SqlConnection(DbConfig.ConnectionString);
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand(@"
+        SELECT StationName, StopOrder
+        FROM TrainStops
+        WHERE TrainNo=@TrainNo
+        ORDER BY StopOrder", con);
+
+            cmd.Parameters.AddWithValue("@TrainNo", trainNo);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            Console.WriteLine("\n--- TRAIN STOPS ---");
+
+            while (dr.Read())
+            {
+                Console.WriteLine($"{dr["StopOrder"]}. {dr["StationName"]}");
+            }
+
+            dr.Close();
+            con.Close();
+        }
+        public static void PromoteWaitingPassenger(
+    int trainNo,
+    string travelClass,
+    string prefix)
+        {
+            SqlConnection con =
+            new SqlConnection(DbConfig.ConnectionString);
+
+            con.Open();
+
+            // First waiting passenger
+            SqlCommand cmd = new SqlCommand(@"
+    SELECT TOP 1
+    P.PassengerId
+    FROM Passengers P
+    JOIN Bookings B
+    ON P.BookingId = B.BookingId
+    WHERE B.TrainNo=@TrainNo
+    AND B.TravelClass=@Class
+    AND P.SeatNumber='Waiting'
+    AND P.Status='Active'
+    ORDER BY P.PassengerId", con);
+
+            cmd.Parameters.AddWithValue("@TrainNo", trainNo);
+            cmd.Parameters.AddWithValue("@Class", travelClass);
+
+            object result = cmd.ExecuteScalar();
+
+            if (result == null)
+            {
+                con.Close();
+                return;
+            }
+
+            int passengerId =
+            Convert.ToInt32(result);
+
+            // Get next seat number
+            SqlCommand seatCmd =
+            new SqlCommand(@"
+    SELECT COUNT(*)
+    FROM Passengers
+    WHERE SeatNumber<>'Waiting'
+    AND Status='Active'", con);
+
+            int seatNo =
+            Convert.ToInt32(seatCmd.ExecuteScalar()) + 1;
+
+            string newSeat =
+            prefix + seatNo;
+
+            SqlCommand update =
+            new SqlCommand(@"
+    UPDATE Passengers
+    SET SeatNumber=@SeatNo
+    WHERE PassengerId=@Id", con);
+
+            update.Parameters.AddWithValue("@SeatNo", newSeat);
+            update.Parameters.AddWithValue("@Id", passengerId);
+
+            update.ExecuteNonQuery();
+            string seatColumn = "";
+
+if (travelClass == "2AC")
+    seatColumn = "Available2ACSeats";
+else if (travelClass == "3AC")
+    seatColumn = "Available3ACSeats";
+else
+    seatColumn = "AvailableSleeperSeats";
+
+SqlCommand seatReduce = new SqlCommand(
+$@"UPDATE Trains
+SET {seatColumn} = {seatColumn} - 1
+WHERE TrainNo=@TrainNo", con);
+
+seatReduce.Parameters.AddWithValue("@TrainNo", trainNo);
+
+seatReduce.ExecuteNonQuery();
+
+            //Console.WriteLine(
+            //"Waiting Passenger Confirmed : "
+            //+ newSeat);
+
+            con.Close();
         }
 
     }

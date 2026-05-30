@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace miniproject.Models
 {
     
-        class Booking
+        public class Booking
         {
             public int BookingId { get; set; }
 
