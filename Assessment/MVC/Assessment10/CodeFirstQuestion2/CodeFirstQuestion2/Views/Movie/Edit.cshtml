@@ -1,0 +1,13 @@
+﻿
+@model CodeFirstQuestion2.Models.Movie
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.Mid)
+
+    <p>Name: @Html.TextBoxFor(m => m.MovieName)</p>
+    <p>Director: @Html.TextBoxFor(m => m.DirectorName)</p>
+    <p>Release Date: @Html.TextBoxFor(m => m.DateOfRelease)</p>
+
+    <input type="submit" value="Update" />
+}

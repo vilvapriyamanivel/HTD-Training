@@ -1,0 +1,20 @@
+﻿
+@model IEnumerable<CodeFirstQuestion2.Models.Movie>
+
+<h2>Movies by Year</h2>
+
+<form method="get">
+    Enter Year: <input type="number" name="year" />
+    <input type="submit" value="Search" />
+</form>
+
+<table border="1">
+    @foreach (var m in Model)
+    {
+        <tr>
+            <td>@m.MovieName</td>
+            <td>@m.DirectorName</td>
+        </tr>
+    }
+</table>
+

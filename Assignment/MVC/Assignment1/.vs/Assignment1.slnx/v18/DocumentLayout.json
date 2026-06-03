@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\assignment1\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|solutionrelative:assignment1\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|c:\\users\\vilvapriyam\\dotnet\\assignment\\mvc\\assignment1\\assignment1\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|solutionrelative:assignment1\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\assignment1\\views\\contact\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|solutionrelative:assignment1\\views\\contact\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\assignment1\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|solutionrelative:assignment1\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BBC8302-0DDE-419C-810C-475AE677BA2F}|Assignment1\\Assignment1.csproj|C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\assignment1\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,23 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "Assignment1\\Migrations\\Configuration.cs",
-              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "Assignment1\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T16:19:44.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ContactController.cs",
               "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "Assignment1\\Controllers\\ContactController.cs",
@@ -83,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "202605271620147_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
               "RelativeDocumentMoniker": "Assignment1\\Migrations\\202605271620147_InitialCreate.cs",
@@ -95,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Views\\Contact\\Create.cshtml",
               "RelativeDocumentMoniker": "Assignment1\\Views\\Contact\\Create.cshtml",
@@ -107,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Web.config",
               "RelativeDocumentMoniker": "Assignment1\\Web.config",
@@ -120,15 +108,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Views\\Contact\\Index.cshtml",
               "RelativeDocumentMoniker": "Assignment1\\Views\\Contact\\Index.cshtml",
               "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Views\\Contact\\Index.cshtml",
               "RelativeToolTip": "Assignment1\\Views\\Contact\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-27T16:07:24.84Z"
+              "WhenOpened": "2026-05-27T16:07:24.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "Assignment1\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assignment\\MVC\\Assignment1\\Assignment1\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "Assignment1\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T16:19:44.876Z"
             },
             {
               "$type": "Document",
