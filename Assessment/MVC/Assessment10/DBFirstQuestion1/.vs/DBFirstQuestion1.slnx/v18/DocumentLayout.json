@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\dbfirstquestion1\\views\\code\\germancustomers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|solutionrelative:dbfirstquestion1\\views\\code\\germancustomers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\dbfirstquestion1\\views\\code\\customerbyorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|solutionrelative:dbfirstquestion1\\views\\code\\customerbyorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\mvc\\assessment10\\dbfirstquestion1\\dbfirstquestion1\\controllers\\codecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|solutionrelative:dbfirstquestion1\\controllers\\codecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\mvc\\assessment10\\dbfirstquestion1\\dbfirstquestion1\\views\\code\\customerbyorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|solutionrelative:dbfirstquestion1\\views\\code\\customerbyorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\mvc\\assessment10\\dbfirstquestion1\\dbfirstquestion1\\views\\code\\germancustomers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|solutionrelative:dbfirstquestion1\\views\\code\\germancustomers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|c:\\users\\vilvapriyam\\dotnet\\assessment\\mvc\\assessment10\\dbfirstquestion1\\dbfirstquestion1\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\dbfirstquestion1\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{C59F6AE0-D3D4-477D-A300-8B5A4671E802}|DBFirstQuestion1\\DBFirstQuestion1.csproj|solutionrelative:dbfirstquestion1\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,26 +46,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GermanCustomers.cshtml",
               "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\DBFirstQuestion1\\Views\\Code\\GermanCustomers.cshtml",
               "RelativeDocumentMoniker": "DBFirstQuestion1\\Views\\Code\\GermanCustomers.cshtml",
               "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\DBFirstQuestion1\\Views\\Code\\GermanCustomers.cshtml",
               "RelativeToolTip": "DBFirstQuestion1\\Views\\Code\\GermanCustomers.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-03T04:51:59.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CodeController.cs",
               "DocumentMoniker": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\DBFirstQuestion1\\Controllers\\CodeController.cs",
               "RelativeDocumentMoniker": "DBFirstQuestion1\\Controllers\\CodeController.cs",
               "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\DBFirstQuestion1\\Controllers\\CodeController.cs",
               "RelativeToolTip": "DBFirstQuestion1\\Controllers\\CodeController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-03T04:42:16.248Z",
               "EditorCaption": ""
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "DBFirstQuestion1\\Views\\Code\\CustomerByOrder.cshtml",
               "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\DBFirstQuestion1\\Views\\Code\\CustomerByOrder.cshtml",
               "RelativeToolTip": "DBFirstQuestion1\\Views\\Code\\CustomerByOrder.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-03T04:53:11.945Z",
               "EditorCaption": ""
@@ -92,8 +92,7 @@
               "ToolTip": "C:\\Users\\vilvapriyam\\DOTNET\\Assessment\\MVC\\Assessment10\\DBFirstQuestion1\\DBFirstQuestion1\\Models\\Model1.edmx [Diagram1]",
               "RelativeToolTip": "DBFirstQuestion1\\Models\\Model1.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2026-06-03T04:38:42.134Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2026-06-03T04:38:42.134Z"
             }
           ]
         }

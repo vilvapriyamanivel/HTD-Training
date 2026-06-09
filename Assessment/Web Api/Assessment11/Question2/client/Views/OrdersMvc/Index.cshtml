@@ -1,0 +1,25 @@
+﻿
+
+@model IEnumerable<dynamic>
+
+<h2>Orders of Steven Buchanan</h2>
+
+<table border="1">
+    <tr>
+        <th>OrderID</th>
+        <th>OrderDate</th>
+        <th>CustomerID</th>
+        <th>Country</th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.OrderID</td>
+        <td>@item.OrderDate</td>
+        <td>@item.CustomerID</td>
+        <td>@item.ShipCountry</td>
+    </tr>
+}
+</table>
+
